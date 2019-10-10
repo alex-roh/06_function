@@ -5,6 +5,21 @@
 
 int main(int argc, char *argv[])
 {
+	
+	int x = 2, y = 5;
+	
+	int sumTwoOutput = sumTwo(x, y);
+	
+	printf("%d + %d = %d\n", x, y, sumTwoOutput);
+	
+	int squareOutput = square(x);
+	
+	printf("%d^%d = %d\n", x, x, squareOutput);
+	
+	int getMaxOutput = get_max(x, y);
+	
+	printf("%d와 %d 중 %d가 더 크면 %d를 출력하고, %d가 더 크면 %d를 출력한다: %d\n", x, y, x, x, y, y, getMaxOutput);
+	
 	return 0;	
 }
 
