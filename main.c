@@ -5,38 +5,20 @@
 
 int main(int argc, char *argv[])
 {
+	int x;
+	int y;
 	
-	int x = 2, y = 5;
+	x = 2;
+	y = 5;
+	square(x);
 	
-	int sumTwoOutput = sumTwo(x, y);
-	
-	printf("%d + %d = %d\n", x, y, sumTwoOutput);
-	
-	int squareOutput = square(x);
-	
-	printf("%d^%d = %d\n", x, x, squareOutput);
-	
-	int getMaxOutput = get_max(x, y);
-	
-	printf("%d와 %d 중 %d가 더 크면 %d를 출력하고, %d가 더 크면 %d를 출력한다: %d\n", x, y, x, x, y, y, getMaxOutput);
+	printf("square : %i\n", x);
 	
 	return 0;	
 }
 
-int sumTwo(int a, int b)
-{
-	int output;
-	output = a + b;
-	return output;	
-}
 
-int square(int n)
+void square(int n)
 {
-	return (n * n);
-}
-
-int get_max(int a, int b)
-{
-	if(a > b) return a;
-	else return b;
+	n = n * n;
 }
