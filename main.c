@@ -5,20 +5,15 @@
 
 int main(int argc, char *argv[])
 {
-	int x;
-	int y;
 	
-	x = 2;
-	y = 5;
-	square(x);
-	
-	printf("square : %i\n", x);
+	int result;
+	result = square(5);
+	printf("%d", result);
 	
 	return 0;	
 }
 
-
-void square(int n)
+int square(int n)
 {
-	n = n * n;
+	return (n * n);	
 }
